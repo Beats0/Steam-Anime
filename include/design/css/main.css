@@ -1,0 +1,3683 @@
+/* = Comments ======================================================================================================================================== */
+/* =================================================================================================================================================== */
+/* Need: font.css for Arial Black and League Gothic Fonts to Work */
+
+
+/* = Allgemein ======================================================================================================================================= */
+/* =================================================================================================================================================== */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	height: 100%;		
+}
+
+body {
+	font-family: Arial;
+	color: #FFFFFF;
+	font-size: 12px;
+	background-color: #232428;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 1600px 800px, auto 800px;
+	height: 100%;
+	height: calc(100% - 41px);
+	position: relative;
+}
+	body#cookie-check {
+		margin: 81px 0px 0px 0px;
+	}
+
+a img {
+	border: 0px;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+	a:hover {
+		color: #ddd;
+	}
+
+table {
+	font-family: Arial;
+	color: #fff;
+	font-size: 12px;
+	vertical-align: top;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+	table td {
+		vertical-align: top;
+	}
+
+ul {
+	margin: 0px 0px 0px 25px;
+}
+
+h1 {
+	font-family: Arial;
+	position: relative;
+	font-size: 22px;
+	margin: 0px 0px 20px 0px;
+}
+
+h2 {
+	font-family: Arial;
+	position: relative;
+	font-size: 14px;
+	margin: 0px 0px 15px 0px;
+}
+
+h3 {
+	font-family: Arial;
+	position: relative;
+	font-size: 14px;
+	margin: 0px 0px 20px 0px;
+}
+
+h4 {
+	font-family: Arial;
+	position: relative;
+	font-size: 12px;
+	margin: 15px 0px 5px 0px;
+}
+
+h5 {
+	font-family: Arial;
+	font-weight: normal;
+	position: relative;
+	font-size: 12px;
+	margin: 15px 0px 15px 0px;
+}
+
+
+/* = Struktur & Design =============================================================================================================================== */
+/* =================================================================================================================================================== */
+/* - Site Wrapper ------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#site {
+	position: relative;
+	height: auto !important;
+	min-height: 100%;
+}
+
+/* - Cookie Check ------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#eu-cookie {
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	position: relative;
+	z-index: 12;
+	background-color: #18191B;
+}
+	div#eu-cookie div#cookie-content {
+		height: 40px;
+		width: 1000px;
+		line-height: 40px;
+		margin: 0px auto 0px auto;
+		z-index: 12;
+		background-color: #18191B;
+	}
+	div#eu-cookie div#cookie-content .button-blue {
+		position: relative;
+		top: 10px;
+	}
+
+/* - Navbar ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#navbar {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+	div#navbar div#navbar-wrapper {
+		position: relative;
+	}
+	div#navbar div#navbar-image {
+		background-image: url('../img/navbar.png');
+		width: 100%;
+		height: 41px;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		z-index: 11;
+		opacity: 0.8;
+	}
+	div#navbar div#navbar-content {
+		height: 41px;
+		width: 1000px;
+		line-height: 41px;
+		margin: 0px auto 0px auto;
+		position: relative;
+		z-index: 12;
+		background-image: url('../img/navbar-logo.png');
+		background-position: 0px 13px;
+		background-repeat: no-repeat;
+	}
+		div#navbar div#navbar-content a.logo {
+			position: absolute;
+			left: 0px;
+			width: 207px;
+			height: 41px;
+			display: block;
+		}
+		div#navbar div#navbar-content div#navbar-menu {
+			position: absolute;
+			top: 0px;
+			top: 0px;
+			right: 170px;
+			width: 610px;
+			height: 40px;
+			text-align: center;
+		}
+			div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item {
+				position: relative;
+				display: inline-block;
+				height: 40px;
+				line-height: 40px;
+				font-size: 12px;
+			}
+				div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item a.item-link {
+					display: inline-block;
+					height: 40px;
+					line-height: 40px;
+					padding: 0px 12px 0px 12px;
+				}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item#tools a.item-link {
+						cursor: default;
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item#trading a.item-link {
+						cursor: default;
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item:hover a.item-link {
+						color: #FFFFFF;
+						text-shadow:
+							2px 2px 4px rgba(255, 255, 255, .3),
+							-2px -2px 4px rgba(255, 255, 255, .3),
+							-2px 2px 4px rgba(255, 255, 255, .3),
+							2px -2px 4px rgba(255, 255, 255, .3);
+					}
+				div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub {
+					position: absolute;
+					top: 40px;
+					left: -20px;
+					visibility: hidden;
+					padding: 0px 0px 0px 0px;
+					text-align: left;
+					border-left: 1px solid #1F4770;
+					border-right: 1px solid #1F4770;
+					border-bottom: 1px solid #1F4770;
+				}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item#trading div.item-sub {
+						left: -12px;
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item#tools div.item-sub {
+						left: -35px;
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub:before {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						left: 56px;
+						top: -10px;
+						border: 5px solid;
+						border-color: #111214 transparent transparent #111214;
+						-moz-transform: rotate(180deg);
+						-ms-transform: rotate(180deg);
+						-o-transform: rotate(180deg);
+						-webkit-transform: rotate(180deg);
+						transform: rotate(180deg);
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub:after {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						right: 56px;
+						top: -10px;
+						border: 5px solid;
+						border-color: #111214 transparent transparent #111214;
+						-moz-transform: rotate(270deg);
+						-ms-transform: rotate(270deg);
+						-o-transform: rotate(270deg);
+						-webkit-transform: rotate(270deg);
+						transform: rotate(270deg);
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item:hover div.item-sub {
+						visibility: visible;
+						z-index: 10;
+					}
+					div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub a {
+						display: block;
+						width: 130px;
+						line-height: 40px;
+						height: 40px;
+						background-color: #111214;
+						padding: 0px 0px 0px 0px;
+						margin: 0px 0px 0px 0px;
+						text-align: center;
+					}
+						div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub a:hover {
+							color: #FFFFFF;
+							background-color: #000000;
+							text-shadow:
+								2px 2px 4px rgba(255, 255, 255, .3),
+								-2px -2px 4px rgba(255, 255, 255, .3),
+								-2px 2px 4px rgba(255, 255, 255, .3),
+								2px -2px 4px rgba(255, 255, 255, .3);
+						}
+						div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub a.new {
+							font-weight: bold;
+							color: #FFA54F;
+						}
+							div#navbar div#navbar-content div#navbar-menu div.navbar-menu-item div.item-sub a.new:hover {
+								color: #FFA54F;
+							}
+		div#navbar div#navbar-content div#logout {
+			position: absolute;
+			top: 8px;
+			right: 0px;
+			margin: 0px 0px 0px 20px;
+			float: right;
+			height: 23px;
+			line-height: 23px;
+			font-size: 11px;
+			display: block;
+			border: 0px;
+			width: 153px;
+			color: #FFFFFF;
+			margin: 0px;
+			text-align: center;
+		}
+			div#navbar div#navbar-content div#logout a.login {
+				display: block;
+				width: 180px;
+				height: 35px;
+				position: absolute;
+				left: -27px;
+				top: -5px;
+			}
+			div#navbar div#navbar-content div#logout a.name {
+				display: block;
+				width: 125px;
+				height: 23px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				border-radius: 4px 0px 0px 4px;
+				background-image: url('../img/button-green.png');
+				background-position: 0px 0px;
+				text-shadow:
+					2px 2px 4px rgba(0, 0, 0, .3),
+					-2px -2px 4px rgba(0, 0, 0, .3),
+					-2px 2px 4px rgba(0, 0, 0, .3),
+					2px -2px 4px rgba(0, 0, 0, .3);
+			}
+				div#navbar div#navbar-content div#logout a.name:hover {
+					background-position: 0px -23px;
+					color: #FFFFFF;
+				}
+			div#navbar div#navbar-content div#logout div.dropdown {
+				width: 27px;
+				height: 23px;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				cursor: default;
+				border-left: 1px solid #FFFFFF;
+				border-radius: 0px 4px 4px 0px;
+				background-image: url('../img/button-green.png');
+				background-position: 0px 0px;
+				text-shadow:
+					2px 2px 4px rgba(0, 0, 0, .3),
+					-2px -2px 4px rgba(0, 0, 0, .3),
+					-2px 2px 4px rgba(0, 0, 0, .3),
+					2px -2px 4px rgba(0, 0, 0, .3);
+			}
+				div#navbar div#navbar-content div#logout div.dropdown:hover {
+					background-position: 0px -23px;
+				}
+				div#navbar div#navbar-content div#logout div.dropdown:hover div.hover-fix {
+					visibility: visible;
+				}
+				div#navbar div#navbar-content div#logout div.dropdown div.hover-fix {
+					width: 153px;
+					padding: 9px 10px 10px 10px;
+					top: 23px;
+					right: -10px;
+					position: absolute;
+					visibility: hidden;
+				}
+				div#navbar div#navbar-content div#logout div.dropdown div.drop-container {
+					width: 151px;
+					position: relative;
+					background-color: #111214;
+					border-left: 1px solid #1F4770;
+					border-right: 1px solid #1F4770;
+					border-bottom: 1px solid #1F4770;
+					margin: 1px 0px 0px 0px;
+				}
+					div#navbar div#navbar-content div#logout div.dropdown div.drop-container:before {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						right: 12px;
+						top: -8px;
+						border: 4px solid;
+						border-color: #111214 transparent transparent #111214;
+						-moz-transform: rotate(180deg);
+						-ms-transform: rotate(180deg);
+						-o-transform: rotate(180deg);
+						-webkit-transform: rotate(180deg);
+						transform: rotate(180deg);
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+					}
+					div#navbar div#navbar-content div#logout div.dropdown div.drop-container:after {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						right: 5px;
+						top: -8px;
+						border: 4px solid;
+						border-color: #111214 transparent transparent #111214;
+						-moz-transform: rotate(270deg);
+						-ms-transform: rotate(270deg);
+						-o-transform: rotate(270deg);
+						-webkit-transform: rotate(270deg);
+						transform: rotate(270deg);
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+					}
+					div#navbar div#navbar-content div#logout div.dropdown div.drop-container a.drop-element {
+						display: block;
+						width: 151px;
+						line-height: 40px;
+						height: 40px;
+						color: #FFFFFF;
+						font-size: 12px;
+					}
+						div#navbar div#navbar-content div#logout div.dropdown div.drop-container a.drop-element:hover {
+							text-shadow:
+								2px 2px 4px rgba(255, 255, 255, .3),
+								-2px -2px 4px rgba(255, 255, 255, .3),
+								-2px 2px 4px rgba(255, 255, 255, .3),
+								2px -2px 4px rgba(255, 255, 255, .3);
+							background-color: #000000;
+						}
+
+/* - Content Container ------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#content-area {
+	width: 1000px;
+	margin: 41px auto 0px auto;
+	overflow: hidden;
+}
+div#content-advert {
+	width: 1000px;
+	margin: 0px auto 20px auto;
+	overflow: hidden;
+}
+div#content-advert-top {
+	width: 1000px;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+div#content-partner {
+	width: 1000px;
+	margin: 0px auto 0px auto;
+	overflow: hidden;
+}
+
+/* - Content ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.content-box {
+	float: left;
+	overflow: hidden;
+	width: 1000px;
+	margin: 20px 0px 0px 0px;
+}
+	div.content-box div.content-box-topbar-large {
+		line-height: 72px;
+		height: 72px;
+		background-image: url('../img/point-big.png');
+		background-position: 21px 28px;
+		background-repeat: no-repeat;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+		position: relative;
+	}
+		div.content-box div.content-box-topbar-large span.left {
+			position: absolute;
+			left: 50px;
+			font-family: League Gothic, Arial;
+			font-size: 32px;
+			letter-spacing: 1px;
+		}
+		div.content-box div.content-box-topbar-large span.right {
+			position: absolute;
+			right: 15px;
+			font-size: 11px;
+		}
+		div.content-box div.content-box-topbar-large select.dropdown {
+			position: absolute;
+			right: 17px;
+			top: 20px;
+			width: 380px;
+			height: 30px;
+			background-color: #222425;
+			border-radius: 4px;
+			color: #9E9E9E;
+			border: 0px;
+			padding: 5px;
+		}
+	div.content-box div.content-box-topbar {
+		line-height: 36px;
+		height: 36px;
+		background-image: url('../img/point-small.png');
+		background-position: 11px 14px;
+		background-repeat: no-repeat;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+		position: relative;
+	}
+		div.content-box div.content-box-topbar.light {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.content-box div.content-box-topbar span.left {
+			position: absolute;
+			left: 25px;
+			font-family: League Gothic, Arial;
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+		div.content-box div.content-box-topbar span.right {
+			position: absolute;
+			right: 15px;
+			font-size: 11px;
+		}
+			div.content-box div.content-box-topbar span.right .close {
+				position: absolute;
+				right: -15px;
+				top: 0px;
+				width: 36px;
+				height: 36px;
+				background-image: url('../img/button_close.png');
+				background-position: 10px 10px;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+
+	div.content-box div.content-box-list {
+		position: relative;
+	}
+		div.content-box div.content-box-list a {
+			margin: 2px 0px 0px 0px;
+			display: block;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			line-height: 56px;
+			padding: 0px 0px 0px 35px;
+			background-image: url('../img/point-small.png');
+			background-position: 18px 25px;
+			background-repeat: no-repeat;
+			position: relative;
+		}
+			div.content-box div.content-box-list a:hover {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .5);
+			}
+	div.content-box div.content-box-split {
+		position: relative;
+		margin: 2px 0px 0px 0px;
+		overflow: hidden;
+	}
+		div.content-box div.content-box-split .left {
+			width: 49%;
+			width: calc(50% - 1px);
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			position: relative;
+			overflow: hidden;
+		}
+		div.content-box div.content-box-split .right {
+			width: 49%;
+			width: calc(50% - 1px);
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			overflow: hidden;
+		}
+	div.content-box .content-box-normal {
+		position: relative;
+		margin: 2px 0px 0px 0px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		overflow: hidden;
+	}
+		div.content-box .content-box-normal.dark {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.content-box .content-box-normal.padding {
+			padding: 20px;
+			width: 960px;
+		}
+		div.content-box .content-box-normal.stats {
+			width: 960px;
+			padding: 0px 20px 0px 20px;
+		}
+	div.content-box div.content-box-button-bar {
+		width: 1000px;
+		height: 40px;
+		line-height: 40px;
+		margin: 2px auto 0px auto;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		position: relative;
+		text-align: center;
+	}
+		div.content-box div.content-box-button-bar.dark {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.content-box div.content-box-button-bar form {
+			display: inline-block;
+		}
+		div.content-box div.content-box-button-bar div.left {
+			display: inline-block;
+			position: absolute;
+			top: 0px;
+			left: 20px;
+			max-width: 960px;
+			text-align: left;
+		}
+			div.content-box div.content-box-button-bar div.left .button-blue {
+				display: inline-block;
+				margin: 0px 10px 0px 0px;
+				position: relative;
+				bottom: 1px;
+				float: none;
+			}
+			div.content-box div.content-box-button-bar div.left span {
+				margin: 0px 10px 0px 0px;
+			}
+		div.content-box div.content-box-button-bar div.right {
+			display: inline-block;
+			position: absolute;
+			top: 0px;
+			right: 20px;
+			max-width: 960px;
+			text-align: right;
+		}
+			div.content-box div.content-box-button-bar div.right .button-blue {
+				display: inline-block;
+				margin: 0px 0px 0px 10px;
+				position: relative;
+				bottom: 1px;
+				float: none;
+			}
+			div.content-box div.content-box-button-bar div.right span {
+				margin: 0px 0px 0px 10px;
+			}
+		div.content-box div.content-box-button-bar div.center {
+			display: inline-block;
+			max-width: 1000px;
+			text-align: center;
+		}
+			div.content-box div.content-box-button-bar div.center .button-blue {
+				display: inline-block;
+				margin: 0px 10px 0px 0px;
+				position: relative;
+				bottom: 1px;
+				float: none;
+			}
+			div.content-box div.content-box-button-bar div.center span {
+				margin: 0px 10px 0px 0px;
+			}
+				div.content-box div.content-box-button-bar div.center span span {
+					margin: 0px 0px 0px 0px;
+				}
+	div.content-box-switch {
+		position: relative;
+		right: 2px;
+		height: 36px;
+		width: 1004px;
+		margin: 2px 0px 0px 0px;
+		border-spacing: 2px 0px;
+		border-collapse: separate;
+		display: table;
+	}
+		div.content-box-switch div.switch-wrapper {
+			margin: 0px;
+			background-color: #18191B;
+			display: table-cell;
+			vertical-align: top;
+			text-align: center;
+			padding: 7px;
+		}
+		div.content-box-switch div.switch-wrapper .switch {
+			position: relative;
+			top: 3px;
+		}
+		div.content-box-switch div.switch-wrapper .text {
+			position: relative;
+			bottom: 2px;
+		}
+
+/* - Footer ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#footer-spacer {
+	margin: 8px auto 0px auto;
+	height: 67px;
+}
+
+div#footer {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	background-color: #000000;
+	border-top: 2px solid #0F58A7;
+	height: 65px;
+	z-index: 10;
+	width: 100%;
+	padding: 0px !important;
+}
+	div#footer div {
+		width: 1000px;
+		margin: 0px auto 0px auto;
+		background-image: url('../img/footer-logo.png');
+		background-repeat: no-repeat;
+		background-position: 0px 9px;
+		height: 65px;
+		position: relative;
+	}
+	div#footer span#copyright {
+		position: absolute;
+		right: 0px;
+		top: 18px;
+		display: block;
+		font-size: 10px;
+		text-align: right;
+	}
+		div#footer span#copyright a {
+			font-family: Arial;
+			font-size: 11px;
+			text-decoration: none;
+		}
+	div#footer span#disclaimer {
+		position: absolute;
+		left: 30px;
+		top: 18px;
+		display: block;
+		font-size: 10px;
+	}
+		div#footer span#disclaimer a {
+			font-weight: bold;
+			font-size: 10px;
+			text-decoration: none;
+		}
+	
+	
+/* = Page Design Classes ============================================================================================================================= */
+/* =================================================================================================================================================== */
+/* - Advertisement --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#advertisement {
+	margin: 8px auto 0px auto;
+	z-index: 5;
+}
+	div#advertisement div.content-box-normal {
+		padding: 15px 15px 15px 15px;
+		overflow: hidden;
+		text-align: center;
+		min-height: 90px;
+		max-height: 250px;
+	}
+		div#advertisement div.content-box-normal a#advertisement-small {
+			position: absolute;
+			top: 15px;
+			left: 5px;
+			width: 236px;
+			height: 100px;
+		}
+		div#advertisement div.content-box-normal div.advertisement-big-google {
+			height: 90px;
+			width: 970px;
+		}
+		div#advertisement div.content-box-normal div.advertisement-big-fallback {
+			min-height: 90px;
+			display: inline-block;
+			/*position: absolute;
+			/*margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;*/
+		}
+		div#advertisement div.content-box-normal div#nn_leaderboard {
+			min-height: 90px;
+			width: 970px;
+			display: inline-block;
+			/*position: absolute;
+			/*margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;*/
+		}
+		div#advertisement div.content-box-normal div#nn_billboard {
+			min-height: 90px;
+			width: 970px;
+			display: inline-block;
+			/*position: absolute;
+			/*margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;*/
+		}
+
+div#content-advert-top div#advertisement {
+	margin: 20px auto 0px auto;
+}
+
+/* - Partner --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#partner {
+	margin: 8px auto auto auto;
+	z-index: 5;
+}
+	div#partner div.content-box-normal {
+		padding: 15px 15px 15px 15px;
+		overflow: hidden;
+		text-align: right;
+		height: 129px;
+	}
+		div#partner div.content-box-normal div#partner-big {
+			text-align: center;
+			height: 129px;
+			width: 970px;
+			position: absolute;
+			margin-left: auto;
+			margin-right: auto;
+			left: 0;
+			right: 0;
+		}
+
+
+/* - Home -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+body#home {
+	background-image: url('../backgrounds/batman.jpg');
+	background-position: top center;
+	background-color: #242328;
+}
+
+a#home-artwork {
+	display: block;
+	height: 400px;
+}
+
+div#home-games {
+	margin: 0px 0px 0px 0px;
+}
+	div#home-games span.right img {
+		position: relative;
+		top: 4px;
+		margin: 0px 0px 0px 7px;
+	}
+	div#home-games div.switcher {
+		margin: 2px 0px 0px 0px;
+		width: 1000px;
+		height: 110px;
+		position: relative;
+	}
+		div#home-games div.switcher div#games-content {
+			width: 926px;
+			height: 110px;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			margin: 0px auto 0px auto;
+			padding: 0px 10px 0px 8px;
+		}
+			div#home-games div.switcher div#games-content div#width-fix {
+				width: 926px;
+				height: 110px;
+				overflow: hidden;
+				margin: 0px auto 0px auto;
+			}
+			div#home-games div.switcher div#games-content div#container {
+				padding: 0px 4px 0px 4px;
+				width: 4600px;
+			}
+			div#home-games div.switcher div#games-content a.games-game {
+				width: 146px;
+				height: 68px;
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .3);
+				margin: 11px 10px 0px 10px;
+				padding: 10px 9px 10px 9px;
+				display: block;
+				float: left;
+				position: relative;
+			}
+				div#home-games div.switcher div#games-content a.games-game.pinned:before {
+					content: ' ';
+					position: absolute;
+					top: -3px;
+					right: -3px;
+					width: 20px;
+					height: 20px;
+					background-image: url('../img/pinned.png');
+					background-position: center;
+					background-repeat: no-repeat;
+					background-color: #0F58A7;
+					border-radius: 16px;
+				}
+				div#home-games div.switcher div#games-content a.games-game:hover {
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .8);
+				}
+				div#home-games div.switcher div#games-content a.games-game img {
+					width: 146px;
+					height: 68px;
+				}
+		div#home-games div.switcher a#games-arrow-left {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 26px;
+			height: 110px;
+			background-image: url('../img/arrow-left.png');
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			cursor: pointer;
+		}
+			div#home-games div.switcher a#games-arrow-left:hover {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .5);
+			}
+		div#home-games div.switcher a#games-arrow-right {
+			display: block;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 26px;
+			height: 110px;
+			background-image: url('../img/arrow-right.png');
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			cursor: pointer;
+		}
+			div#home-games div.switcher a#games-arrow-right:hover {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .5);
+			}
+
+div#home-news {
+	margin-top: 8px;
+	width: 603px;
+	height: 268px;
+}
+	div#home-news span.home-news-time {
+		color: #7d7d7d;
+		font-size: 10px;
+		position: absolute;
+		right: 15px;
+	}
+	div#home-news span.right img {
+		position: relative;
+		top: 4px;
+		margin: 0px 0px 0px 7px;
+	}
+	
+div#home-news-badge {
+	margin-top: 8px;
+	width: 518px;
+	height: 268px;
+}
+	div#home-news-badge span.home-news-time {
+		color: #7d7d7d;
+		font-size: 10px;
+		position: absolute;
+		right: 15px;
+	}
+	div#home-news-badge span.right img {
+		position: relative;
+		top: 4px;
+		margin: 0px 0px 0px 7px;
+	}
+
+div#home-join {
+	margin-top: 8px;
+	width: 233px;
+	margin-left: 8px;
+	margin-right: 8px;
+	height: 268px;
+}
+	div#home-join a.content-box-normal {
+		height: 230px;
+		width: 233px;
+		display: block;
+	}
+		div#home-join a.content-box-normal:hover {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div#home-join a.content-box-normal  span.home-join-text {
+			display: block;
+			padding: 25px 20px 0px 20px;
+			font-size: 11px;
+			color: #CACACA;
+			text-align: justify;
+		}
+		div#home-join a.content-box-normal img.home-join-image {
+			margin: 0px auto 0px auto;
+			width: 150px;
+			height: 150px;
+			display: block;
+			display: block;
+		}
+
+div#home-badge {
+	margin-top: 8px;
+	width: 233px;
+	height: 268px;
+}
+	div#home-badge a.content-box-normal {
+		height: 230px;
+		width: 233px;
+		display: block;
+	}
+		div#home-badge a.content-box-normal:hover {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div#home-badge a.content-box-normal  span.home-badge-text {
+			display: block;
+			padding: 25px 20px 0px 20px;
+			font-size: 11px;
+			color: #CACACA;
+			text-align: justify;
+		}
+		div#home-badge a.content-box-normal img.home-badge-image {
+			margin: 0px auto 0px auto;
+			width: 150px;
+			height: 150px;
+			display: block;
+			display: block;
+		}
+		
+div#home-giveaway {
+	margin-top: 8px;
+	width: 148px;
+	height: 268px;
+}
+	div#home-giveaway a.content-box-normal {
+		height: 230px;
+		display: block;
+	}
+		div#home-giveaway a.content-box-normal:hover {
+			background-color: #060707;
+			background-color: rgba(0, 0, 0, .8);
+		}
+		div#home-giveaway a.content-box-normal span.home-giveaway-text {
+			display: block;
+			padding: 25px 27px 0px 27px;
+			font-size: 11px;
+			color: #CACACA;
+		}
+		div#home-giveaway a.content-box-normal img.home-giveaway-image {
+			display: block;
+			margin: 10px 0px 0px 30px;
+		}
+
+
+/* - Inventory --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#inventory-content {
+	min-height: 390px;
+}
+	div#inventory-content .content-box {
+		margin: 2px 0px 0px 0px;
+	}
+div#inventory-content div.content-box-normal {
+	padding: 20px;
+}
+	div#inventory-content div.content-box-normal div#inventory-info {
+		position: relative;
+		height: 20px;
+		line-height: 20px;
+	}
+		div#inventory-content div.content-box-normal div#inventory-info div.left {
+			position: absolute;
+			left: -10px;
+		}
+			div#inventory-content div.content-box-normal div#inventory-info div.left span.fee-text {
+				position: absolute;
+				left: 260px;
+				top: 2px;
+				width: 400px;
+				font-weight: bold;
+			}
+			div#inventory-content div.content-box-normal div#inventory-info div.left div.container {
+				position: absolute;
+				left: 70px;
+				top: -4px;
+				width: 400px;
+			}
+				div#inventory-content div.content-box-normal div#inventory-info div.left div.container span.bot-box {
+					float: left;
+					width: 50px;
+					margin: 0px 4px 0px 0px;
+					padding: 3px 10px 3px 10px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .3);
+				}
+				div#inventory-content div.content-box-normal div#inventory-info div.left div.container span.number-box {
+					float: left;
+					margin: 0px 15px 0px 0px;
+					padding: 3px 5px 3px 5px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .3);
+				}
+			div#inventory-content div.content-box-normal div#inventory-info div.right {
+				position: absolute;
+				right: 0px;
+			}
+				div#inventory-content div.content-box-normal div#inventory-info div.right.list {
+					width: 600px;
+				}
+				div#inventory-content div.content-box-normal div#inventory-info div.right span.price-box-green {
+					float: right;
+					padding: 3px 5px 3px 25px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .3);
+					background-image: url('../img/point-inventory-green.png');
+					background-position: 7px 6px;
+					background-repeat: no-repeat;
+					white-space: nowrap;
+				}
+				div#inventory-content div.content-box-normal div#inventory-info div.right span.price-box-red {
+					float: right;
+					margin: 0px 0px 0px 10px;
+					padding: 3px 5px 3px 25px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .3);
+					background-image: url('../img/point-inventory-red.png');
+					background-position: 7px 6px;
+					background-repeat: no-repeat;
+					white-space: nowrap;
+				}
+				div#inventory-content div.content-box-normal div#inventory-info div.right span.price-box-blue {
+					float: right;
+					margin: 0px 0px 0px 10px;
+					padding: 3px 5px 3px 25px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .3);
+					background-image: url('../img/point-inventory-blue.png');
+					background-position: 7px 6px;
+					background-repeat: no-repeat;
+					white-space: nowrap;
+				}
+					div#inventory-content div.content-box-normal div#inventory-info div.right div.link {
+						cursor: pointer;
+					}
+						div#inventory-content div.content-box-normal div#inventory-info div.right div.link:hover {
+							color: #DDDDDD;
+						}
+
+
+/* - Inventory List ---------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+a.inventory-list-item {
+	background-color: #111214;
+	background-color: rgba(0, 0, 0, .3);
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin: 20px 0px 0px 0px;
+	position: relative;
+}
+	a.inventory-list-item:hover {
+		background-color: #000000;
+		background-color: rgba(0, 0, 0, 1);
+	}
+	a.inventory-list-item span.title {
+		position: absolute;
+		left: 20px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	a.inventory-list-item span.price {
+		position: absolute;
+		right: 20px;
+	}
+	
+.inventory-game-list-item {
+	width: 1000px;
+	height: 30px;
+	position: relative;
+	float: left;
+	padding: 2px 0px 0px 0px;
+}
+	div.inventory-game-list-item {
+		margin: 2px 0px 0px 0px;
+	}
+	.inventory-game-list-item:hover {
+		color: #FFFFFF;
+	}
+	.inventory-game-list-item a:hover {
+		color: #FFFFFF;
+	}
+	.inventory-game-list-item .game-title {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 684px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 0px 0px 32px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		background-image: url('../img/point-small.png');
+		background-position: 16px 17px;
+		background-repeat: no-repeat;
+		background-position: 0px -5px;
+	}
+	
+	.inventory-game-list-item .game-title.green {
+		background-image: url('../img/inventory-point-green-small.png');
+	}
+	
+	.inventory-game-list-item .game-title.red {
+		background-image: url('../img/inventory-point-red-small.png');
+	}
+	
+		a.inventory-game-list-item:hover .game-title {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.inventory-game-list-item .game-title {
+			font-weight: bold;
+			background-image: none;
+			background-color: #060707;
+			background-color: rgba(0, 0, 0, .8);
+			padding: 0px;
+			width: 716px;
+			text-align: center;
+		}
+		div.inventory-game-list-item a.game-title:hover {
+			background-color: #000000;
+			background-color: rgba(0, 0, 0, 1);
+		}
+	.inventory-game-list-item .game-cards {
+		position: absolute;
+		top: 0px;
+		right: 142px;
+		width: 120px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 10px 0px 10px;
+		font-size: 11px;
+		text-align: center;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		a.inventory-game-list-item:hover .game-cards {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.inventory-game-list-item .game-cards {
+			font-weight: bold;
+			background-color: #060707;
+			background-color: rgba(0, 0, 0, .8);
+		}
+		div.inventory-game-list-item a.game-cards:hover {
+			background-color: #000000;
+			background-color: rgba(0, 0, 0, 1);
+		}
+	.inventory-game-list-item .game-worth {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 120px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 10px 0px 10px;
+		font-size: 11px;
+		text-align: center;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		a.inventory-game-list-item:hover .game-worth {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.inventory-game-list-item .game-worth {
+			font-weight: bold;
+			background-color: #060707;
+			background-color: rgba(0, 0, 0, .8);
+		}
+		div.inventory-game-list-item a.game-worth:hover {
+			background-color: #000000;
+			background-color: rgba(0, 0, 0, 1);
+		}
+
+
+/* - Inventory List ---------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#inventory-content.user {
+	min-height: 0px;
+}
+		
+
+/* - Inventory Game ---------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#inventory-game-content div#inventory-game-info {
+	position: relative;
+	height: 100px;
+}
+	div#inventory-game-content div#inventory-game-info div.left {
+		position: absolute;
+		left: 20px;
+		top: 16px;
+	}
+		div#inventory-game-content div#inventory-game-info div.left img.game-image {
+			width: 146px;
+			height: 68px;
+		}
+		div#inventory-game-content div#inventory-game-info div.left span.game-title {
+			display: block;
+			position: absolute;
+			left: 162px;
+			top: 0px;
+			width: 788px;
+			padding: 0px 30px 0px 0px;
+			font-size: 16px;
+			font-weight: bold;
+			white-space: nowrap;
+			overflow:hidden !important;
+			text-overflow: ellipsis;
+		}
+		div#inventory-game-content div#inventory-game-info div.left span.game-price {
+			display: block;
+			position: absolute;
+			left: 162px;
+			top: 25px;
+			font-size: 11px;
+			white-space: nowrap;	
+		}
+		div#inventory-game-content div#inventory-game-info div.left div.game-price-info {
+			position: absolute;
+			left: 160px;
+			bottom: 0px;	
+			width: 600px;
+		}
+			div#inventory-game-content div#inventory-game-info div.left div.game-price-info span.price-box-green {
+				float: left;
+				padding: 3px 5px 3px 25px;
+				background-color: #060707;
+				background-color: rgba(0, 0, 0, .3);
+				background-image: url('../img/point-inventory-green.png');
+				background-position: 7px 6px;
+				background-repeat: no-repeat;
+				white-space: nowrap;
+			}
+			div#inventory-game-content div#inventory-game-info div.left div.game-price-info span.price-box-red {
+				float: left;
+				margin: 0px 0px 0px 10px;
+				padding: 3px 5px 3px 25px;
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .3);
+				background-image: url('../img/point-inventory-red.png');
+				background-position: 7px 6px;
+				background-repeat: no-repeat;
+				white-space: nowrap;
+				cursor: pointer;
+			}
+			div#inventory-game-content div#inventory-game-info div.left div.game-price-info span.price-box-orange {
+				float: left;
+				margin: 0px 0px 0px 10px;
+				padding: 3px 5px 3px 25px;
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .3);
+				background-image: url('../img/point-inventory-orange.png');
+				background-position: 7px 6px;
+				background-repeat: no-repeat;
+				white-space: nowrap;
+				cursor: pointer;
+			}
+	div#inventory-game-content div#inventory-game-info div.right {
+		position: absolute;
+		right: 20px;
+		bottom: 16px;
+	}
+		div#inventory-game-content div#inventory-game-info div.right form {
+			float: right;
+		}
+
+div.inventory-game-card-container {
+	width: 1008px;
+}
+	
+div.inventory-game-card-item {
+	height: 293px;
+	width: 160px;
+	position: relative;
+	right: 8px;
+	margin: 8px 0px 0px 8px;
+	float: left;
+}
+	div.inventory-game-card-item div.name-image-container {
+		height: 198px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		margin: 0px 0px 2px 0px;
+		position: relative;
+	}
+		div.inventory-game-card-item div.name-image-container img.card-image {
+			width: 120px;
+			height: 140px;
+			position: absolute;
+			top: 20px;
+			left: 20px
+		}
+			div.inventory-game-card-item div.name-image-container img.card-image.gray {
+				filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+				filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				filter: gray;
+				-webkit-filter: grayscale(100%);
+			}
+		div.inventory-game-card-item div.name-image-container span.card-name {
+			display: block;
+			font-size: 11px;
+			width: 160px;
+			position: absolute;
+			top: 168px;
+			text-align: center;
+		}
+	div.inventory-game-card-item div.price-container {
+		height: 93px;
+		position: relative;
+	}
+		div.inventory-game-card-item div.price-container span.card-amount {
+			width: 160px;
+			height: 19px;
+			line-height: 19px;
+			display: block;
+			text-align: center;
+			color: #1DAF07;
+			font-size: 10px;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+		}
+			div.inventory-game-card-item div.price-container span.card-amount.red {
+				color: #B52426;
+			}
+			div.inventory-game-card-item div.price-container span.card-amount.orange {
+				color: #FF8C00;
+			}
+			div.inventory-game-card-item div.price-container span.card-amount.gray {
+				color: #C5C5C5;
+			}
+		div.inventory-game-card-item div.price-container span.card-price {
+			width: 160px;
+			height: 19px;
+			line-height: 19px;
+			display: block;
+			margin: 2px 0px 0px 0px;
+			text-align: center;
+			font-size: 10px;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+		}
+		div.inventory-game-card-item div.price-container div.element-button {
+			width: 160px;
+			height: 30px;
+			line-height: 30px;
+			margin: 2px 0px 0px 0px;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+		}
+			div.inventory-game-card-item div.price-container div.element-button .button-blue {
+				width: 120px;
+				margin: 5px 10px 0px 10px;
+				padding: 0px 10px 0px 10px;
+				text-align: center;
+			}
+
+
+/* - Showcase ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+a.showcase-navigation-link {
+	display: block;
+	width: 80px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 13px;
+	text-align: center;
+	background-color: #111214;
+	background-color: rgba(0, 0, 0, .5);
+	float: left;
+	margin: 2px 2px 0px 0px;
+}
+	a.showcase-navigation-link:hover {
+		background-color: #000000;
+		background-color: rgba(0, 0, 0, 1);
+		color: #FFFFFF;
+	}
+	a.showcase-navigation-link.recent {
+		width: 89px;
+		line-height: 15px;
+		padding: 15px 0px 0px 0px;
+		height: 45px;
+	}
+	a.showcase-navigation-link.missing {
+		margin: 2px 0px 0px 0px;
+		width: 89px;
+		line-height: 15px;
+		padding: 15px 0px 0px 0px;
+		height: 45px;
+	}
+
+/* Showcase Stats */
+div.content-box-normal.stats table.showcase-stats {
+	font-size: 11px;
+	color: #AAAAAA;
+	width: 100%;
+	line-height: 15px;
+}
+	div.content-box-normal.stats table.showcase-stats td {
+		width: 110px;
+		text-align: center;
+		padding: 10px 0px 0px 0px;
+	}
+	div.content-box-normal.stats table.showcase-stats th {
+		width: 110px;
+		color: #FFFFFF;
+		padding: 0px 0px 10px 0px;
+		text-align: center;
+	}
+		div.content-box-normal.stats table.showcase-stats .first {
+			padding-left: 20px;
+		}
+		div.content-box-normal.stats table.showcase-stats th.title {
+			padding: 10px 20px 10px 0px;
+			color: #FFFFFF;
+			text-align: left;
+			border-right: 2px solid #232428;
+			width: 118px;
+		}
+
+
+/* Showcase Listing */
+div.showcase-game-item {
+	width: 1000px;
+	height: 136px;
+	position: relative;
+	float: left;
+	margin: 20px 0px 0px 0px;
+}
+	div.showcase-game-item img.game-image {
+		width: 292px;
+		height: 136px;
+		position: absolute;
+		left: 20px;
+		top: 0px;
+	}
+	div.showcase-game-item div.game-image-background {
+		width: 332px;
+		height: 112px;
+		position: absolute;
+		left: 0px;
+		top: 12px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	div.showcase-game-item div.game-title {
+		width: 634px;
+		height: 40px;
+		line-height: 40px;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 0px 0px 0px 32px;
+		position: absolute;
+		right: 0px;
+		top: 12px;
+		background-color: #111214;
+		background-color: rgba(0, 0, 0, .5);
+		background-image: url('../img/point-small.png');
+		background-position: 16px 17px;
+		background-repeat: no-repeat;
+	}
+	div.showcase-game-item div.game-info {
+		width: 666px;
+		height: 70px;
+		font-family: Arial;
+		font-weight: bold;
+		position: absolute;
+		right: 0px;
+		bottom: 12px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		div.showcase-game-item div.game-info table.game-stats {
+			font-size: 11px;
+			color: #AAAAAA;
+			position: absolute;
+			top: 13px;
+			left: 15px;
+		}
+			div.showcase-game-item div.game-info table.game-stats td {
+				width: 150px;
+			}
+				div.showcase-game-item div.game-info table.game-stats td span.number {
+					color: #FFFFFF;
+					margin: 0px 5px 0px 0px;
+				}
+		div.showcase-game-item div.game-info div.game-links {
+			position: absolute;
+			font-family: Arial;
+			top: 23px;
+			right: 20px;
+		}
+
+div.showcase-game-list-item {
+	width: 1000px;
+	height: 64px;
+	position: relative;
+	float: left;
+	margin: 20px 0px 0px 0px;
+}
+	div.showcase-game-list-item img.game-image {
+		width: 160px;
+		height: 64px;
+		position: absolute;
+		left: 20px;
+		top: 0px;
+	}
+	div.showcase-game-list-item div.game-image-background {
+		width: 200px;
+		height: 40px;
+		position: absolute;
+		left: 0px;
+		top: 12px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	div.showcase-game-list-item div.game-title {
+		width: 766px;
+		height: 40px;
+		line-height: 40px;
+		font-family: Arial;
+		font-weight: bold;
+		padding: 0px 0px 0px 32px;
+		position: absolute;
+		right: 0px;
+		top: 12px;
+		background-color: #111214;
+		background-color: rgba(0, 0, 0, .5);
+		background-image: url('../img/point-small.png');
+		background-position: 16px 17px;
+		background-repeat: no-repeat;
+	}
+		div.showcase-game-list-item div.game-title div.game-links {
+			position: absolute;
+			font-family: Arial;
+			top: 10px;
+			right: 10px;
+		}
+		
+
+/* - Showcase Game ----------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.showcase-game-page {
+	width: 1000px;
+	height: 219px;
+	position: relative;
+	float: left;
+	margin: 20px 0px 0px 0px;
+}
+	div.showcase-game-page img.game-image {
+		width: 292px;
+		height: 136px;
+		position: absolute;
+		left: 0px;
+		top: 42px;
+	}
+	div.showcase-game-page div.game-title {
+		width: 928px;
+		height: 40px;
+		line-height: 40px;
+		font-family: Arial;
+		font-size: 14px;
+		font-weight: bold;
+		padding: 0px 40px 0px 32px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+		background-image: url('../img/point-small.png');
+		background-position: 16px 17px;
+		background-repeat: no-repeat;
+		white-space: nowrap;
+		overflow:hidden !important;
+		text-overflow: ellipsis;
+	}
+	div.showcase-game-page div.game-info {
+		width: 706px;
+		height: 94px;
+		font-family: Arial;
+		position: absolute;
+		right: 0px;
+		top: 42px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		div.showcase-game-page div.game-info table.game-data {
+			font-size: 12px;
+			color: #AAAAAA;
+			position: absolute;
+			top: 11px;
+			left: 20px;
+			width: 666px;
+		}
+			div.showcase-game-page div.game-info table.game-data th {
+				width: 120px;
+				font-weight: normal;
+				text-align: left;
+				line-height: 18px;
+			}
+			div.showcase-game-page div.game-info table.game-data td {
+				width: 536px;
+				color: #FFFFFF;
+				line-height: 18px;
+			}
+	div.showcase-game-page div.game-info-stats {
+		width: 706px;
+		height: 40px;
+		font-family: Arial;
+		position: absolute;
+		right: 0px;
+		bottom: 41px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		div.showcase-game-page div.game-info-stats table.game-stats {
+			font-size: 12px;
+			color: #AAAAAA;
+			margin: 0px auto 0px auto;
+		}
+			div.showcase-game-page div.game-info-stats table.game-stats th {
+				width: 20px;
+				color: #FFFFFF;
+				font-weight: normal;
+				text-align: right;
+				line-height: 40px;
+			}
+			div.showcase-game-page div.game-info-stats table.game-stats td {
+				color: #AAAAAA;
+				line-height: 40px;
+				padding: 0px 30px 0px 5px;
+			}
+				div.showcase-game-page div.game-info-stats table.game-stats td.last {
+					padding: 0px 10px 0px 5px;
+				}
+	div.showcase-game-page div.game-links {
+		position: absolute;
+		font-family: Arial;
+		width: 980px;
+		height: 30px;
+		padding: 9px 20px 0px 0px;
+		bottom: 0px;
+		right: 0px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+	}
+		div.showcase-game-page div.game-links span.update-time {
+			display: block;
+			position: absolute;
+			height: 39px;
+			line-height: 39px;
+			top: 0px;
+			left: 20px;
+			color: #AAAAAA;
+		}
+
+div.showcase-element-container {
+	width: 1016px;
+	display: table;
+	border-spacing: 8px 0px;
+	margin: 8px 0px 0px 0px;
+}
+	div.showcase-element-container div.showcase-element {
+		width: 160px;
+		position: relative;
+		right: 8px;
+		float: none;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		display: table-cell;
+		vertical-align: top;
+	}
+		div.showcase-element-container div.showcase-element span.element-count {
+			position: absolute;
+			top: 0px;
+			left: 20px;
+			font-size: 10px;
+			line-height: 30px;
+			color: #A0A0A0;
+		}
+		div.showcase-element-container div.showcase-element a.element-link-left {
+			position: absolute;
+			top: 0px;
+			left: 20px;
+			font-size: 10px;
+			line-height: 30px;
+		}
+		div.showcase-element-container div.showcase-element a.element-link-right {
+			position: absolute;
+			top: 0px;
+			right: 20px;
+			font-size: 10px;
+			line-height: 30px;
+		}
+		div.showcase-element-container div.showcase-element .element-image {
+			display: block;
+			margin: 20px auto 8px auto;
+		}
+			div.showcase-element-container div.showcase-element a.element-image img {
+				display: block;
+				margin: 0px auto 0px auto;
+			}
+				div.showcase-element-container.card div.showcase-element .element-image {
+					width: 120px;
+					height: 140px;
+				}
+				div.showcase-element-container.booster div.showcase-element .element-image {
+					width: 120px;
+					height: 140px;
+				}
+				div.showcase-element-container.badge div.showcase-element .element-image {
+					width: 80px;
+					height: 80px;
+				}
+				div.showcase-element-container.emoticon div.showcase-element .element-image.small {
+					width: 18px;
+					height: 18px;
+				}
+				div.showcase-element-container.emoticon div.showcase-element .element-image.big {
+					width: 54px;
+					height: 54px;
+				}
+				div.showcase-element-container.background div.showcase-element .element-image {
+					width: 112px;
+					height: 70px;
+				}
+				div.showcase-element-container.reward div.showcase-element .element-image {
+					width: 112px;
+					height: 112px;
+				}
+					div.showcase-element-container.card div.showcase-element a.element-image img {
+						width: 120px;
+						height: 140px;
+					}
+					div.showcase-element-container.booster div.showcase-element a.element-image img {
+						width: 120px;
+						height: 140px;
+					}
+					div.showcase-element-container.badge div.showcase-element a.element-image img {
+						width: 80px;
+						height: 80px;
+					}
+					div.showcase-element-container.emoticon div.showcase-element a.element-image.small img {
+						width: 18px;
+						height: 18px;
+					}
+					div.showcase-element-container.emoticon div.showcase-element a.element-image.big img {
+						width: 54px;
+						height: 54px;
+					}
+					div.showcase-element-container.background div.showcase-element a.element-image img {
+						width: 112px;
+						height: 70px;
+					}
+					div.showcase-element-container.reward div.showcase-element a.element-image img {
+						width: 112px;
+						height: 112px;
+					}
+			div.showcase-element-container.card div.showcase-element .element-image {
+				margin: 30px auto 8px auto;
+			}
+			div.showcase-element-container.emoticon div.showcase-element .element-image {
+				margin: 15px auto 8px auto;
+			}
+			div.showcase-element-container.background div.showcase-element .element-image {
+				margin: 30px auto 8px auto;
+			}
+		div.showcase-element-container div.showcase-element span.element-text {
+			display: block;
+			width: 140px;
+			margin: 0px 10px 8px 10px;
+			text-align: center;
+			word-wrap: break-word;
+		}
+			div.showcase-element-container.badge div.showcase-element span.element-text {
+				margin: 0px 10px 56px 10px;
+			}
+			div.showcase-element-container.emoticon div.showcase-element span.element-text {
+				margin: 0px 10px 7px 10px;
+				word-wrap: normal;
+			}
+				div.showcase-element-container.emoticon div.showcase-element span.element-text.small {
+					font-size: 10px;
+					line-height: 12px;
+				}
+				div.showcase-element-container.emoticon div.showcase-element span.element-text.smaller {
+					font-size: 8px;
+					line-height: 12px;
+				}
+		div.showcase-element-container div.showcase-element span.element-experience {
+			display: block;
+			width: 140px;
+			margin: 0px 10px 0px 10px;
+			color: #A0A0A0;
+			font-size: 10px;
+			text-align: center;
+		}
+			div.showcase-element-container.badge div.showcase-element span.element-experience {
+				position: absolute;
+				bottom: 20px;
+				right: 10px;
+				margin: 0px;
+			}
+			div.showcase-element-container.background div.showcase-element span.element-experience {
+				position: absolute;
+				bottom: 85px;
+				right: 10px;
+				margin: 0px;
+			}
+			div.showcase-element-container.reward div.showcase-element span.element-experience {
+				position: absolute;
+				bottom: 65px;
+				right: 10px;
+				margin: 0px;
+			}
+			div.showcase-element-container.emoticon div.showcase-element span.element-experience {
+				margin: 0px 10px 10px 10px;
+			}
+		div.showcase-element-container div.showcase-element div.element-button {
+			height: 40px;
+		}
+			div.showcase-element-container div.showcase-element div.element-button a.button-blue {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				width: 120px;
+				padding: 0px;
+				text-align: center;
+				font-size: 11px;
+				font-weight: normal;
+			}
+		div.showcase-element-container.booster div.showcase-element div.element-button {
+			height: 50px;
+		}
+		div.showcase-element-container.background div.showcase-element div.element-button {
+			height: 95px;
+		}
+			div.showcase-element-container.background div.showcase-element div.element-button a.button-blue.preview {
+				position: absolute;
+				bottom: 55px;
+				right: 20px;
+				width: 120px;
+				padding: 0px;
+				text-align: center;
+				font-size: 11px;
+				font-weight: normal;
+			}
+			div.showcase-element-container.background div.showcase-element div.element-button a.button-blue.market {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				width: 120px;
+				padding: 0px;
+				text-align: center;
+				font-size: 11px;
+				font-weight: normal;
+			}
+		div.showcase-element-container.reward div.showcase-element div.element-button {
+			height: 75px;
+		}
+			div.showcase-element-container.reward div.showcase-element div.element-button a.link {
+				position: absolute;
+				bottom: 20px;
+				right: 20px;
+				width: 120px;
+				padding: 0px;
+				text-align: center;
+				font-size: 11px;
+				font-weight: normal;
+			}
+
+/* - Team -------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.content-box-team {
+	margin: 2px 0px 0px 0px;
+}
+	div.content-box-team div.content-box-split .left {
+		height: 180px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		display: block;
+	}
+		div.content-box-team div.content-box-split a.left:hover {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+	div.content-box-team div.content-box-split .right {
+		height: 180px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		display: block;
+	}
+		div.content-box-team div.content-box-split a.right:hover {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.content-box-team div.content-box-split span.team-info {
+			font-size: 10px;
+			color: #B0B0B0;
+			position: absolute;
+			top: 24px;
+			left: 48px;
+		}
+			div.content-box-team div.content-box-split span.team-info span.team-name {
+				color: #FFFFFF;
+			}
+		div.content-box-team div.content-box-split img.team-image {
+			position: absolute;
+			top: 40px;
+			left: 48px;
+		}
+
+
+/* - Guides ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#guides div.content-box-split a.left {
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+	display: block;
+	width: 499px;
+	height: 180px;
+}
+div#guides div.content-box-split a.right {
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+	display: block;
+	height: 180px;
+	width: 499px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+	div#guides div.content-box-split a.left:hover {
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+	}
+	div#guides div.content-box-split a.right:hover {
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+	}
+	div#guides div.content-box-split img.guide-image {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		width: 140px;
+		height: 140px;
+	}
+	div#guides div.content-box-split div.guide-info {
+		position: absolute;
+		top: 25px;
+		left: 175px;
+		width: 295px;
+		height: 140px;
+		text-align: justify;
+	}
+		div#guides div.content-box-split span.guide-title {
+			display: block;
+			font-family: Arial;
+			font-weight: bold;
+		}
+		div#guides div.content-box-split span.guide-author {
+			display: block;
+			margin: 4px 0px 8px 0px;
+			font-size: 11px;
+			color: #B0B0B0;
+		}
+		div#guides div.content-box-split span.guide-description {
+			display: block;
+		}
+
+div.groups {
+	position: relative;
+}
+	div.groups a.group-element {
+		height: 180px;
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		display: block;
+		width: 1000px;
+		position: relative;
+		margin: 2px 0px 0px 0px;
+	}
+		div.groups a.group-element:hover {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		div.groups a.group-element img.group-image {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			width: 140px;
+			height: 140px;
+		}
+		div.groups a.group-element div.group-info {
+			position: absolute;
+			top: 25px;
+			left: 175px;
+			width: 795px;
+			height: 140px;
+			text-align: justify;
+		}
+			div.groups a.group-element span.group-title {
+				display: block;
+				font-family: Arial;
+				font-weight: bold;
+			}
+			div.groups a.group-element span.group-link {
+				display: block;
+				margin: 4px 0px 8px 0px;
+				font-size: 11px;
+				color: #B0B0B0;
+			}
+			div.groups a.group-element span.group-description {
+				display: block;
+			}
+			div.groups a.button-green {
+				position: absolute;
+				bottom: 128px;
+				right: 20px;
+			}
+
+
+
+/* - Guide ------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.content-box.guide {
+	margin: 2px 0px 0px 0px;
+}
+
+
+/* - FAQ --------------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.faq-category {
+	position: relative;
+	margin: 2px 0px 0px 0px;
+}
+	div.faq-category div.side-bar {
+		position: absolute;
+		width: 28px;
+		left: 0px;
+		top: 36px;
+		height: 100%;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+	}
+	div.faq-category div.content-box-topbar .left {
+		padding: 0px 0px 0px 4px;
+	}
+	div.faq-category div.faq-element {
+		width: 970px;
+		margin: 2px 0px 0px 30px;
+	}
+		div.faq-category div.faq-element div.content-box-normal {
+			margin: 2px 0px 0px 0px;
+			width: 930px;
+		}
+
+
+/* - User Profile------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#userprofile p {
+	width: 830px;
+	margin: 10px auto 20px auto;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+
+/* - Donation ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#donation-money p {
+	width: 830px;
+	margin: 0px auto 20px auto;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+div#donation-money div.button-wrapper {
+	text-align: center;
+	position: relative;
+	height: 80px;
+}
+	div#donation-money div.button-wrapper .button-paypal {
+		height: 40px;
+		line-height: 40px;
+		width: 180px;
+		background-image: url('../img/button-blue-very-big.png');
+		font-size: 15px;
+		font-weight: normal;
+		cursor: pointer;
+		display: block;
+		margin: 0px 0px 0px 10px;
+		border-radius: 4px;
+		letter-spacing: 1px;
+		background-position: 0px 0px;
+		color: #FFFFFF;
+		border: 0px;
+		position: absolute;
+		left: 380px;
+		top: 13px;
+		text-align: center;
+	}
+		div#donation-money div.button-wrapper .button-paypal input {
+			width: 180px;
+			height: 40px;
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+		div#donation-money div.button-wrapper .button-paypal:hover {
+			background-position: 0px 20px;
+			color: #FFFFFF;
+		}
+	div#donation-money div.button-wrapper .button-flattr {
+		height: 40px;
+		line-height: 40px;
+		width: 180px;
+		background-image: url('../img/button-blue-very-big.png');
+		font-size: 11px;
+		font-weight: bold;
+		cursor: pointer;
+		display: block;
+		margin: 0px 0px 0px 10px;
+		border-radius: 4px;
+		letter-spacing: 1px;
+		background-position: 0px 0px;
+		color: #FFFFFF;
+		border: 0px;
+		position: absolute;
+		right: 250px;
+		top: 13px;
+	}
+		div#donation-money div.button-wrapper .button-flattr iframe {
+			margin: 10px 0px 0px 35px;
+		}
+		div#donation-money div.button-wrapper .button-flattr:hover {
+			background-position: 0px 20px;
+			color: #FFFFFF;
+		}
+
+div#donation-credits p {
+	width: 830px;
+	margin: 0px auto 0px auto;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+}
+	div#donation-credits p a {
+		text-decoration: underline;
+	}
+	div#donation-credits p a:hover {
+		text-decoration: none;
+	}
+
+div#donation-credits div.button-wrapper {
+	position: relative;
+	height: 60px;
+	margin: 20px auto 0px auto;
+	text-align: center;
+}
+	div#donation-credits div.button-wrapper input {
+		height: 40px;
+		line-height: 40px;
+		width: 260px;
+		background-image: url('../img/button-blue-very-big.png');
+		font-size: 15px;
+		font-weight: normal;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0px 0px 0px 0px;
+		border-radius: 4px;
+		letter-spacing: 1px;
+		background-position: 0px 0px;
+		color: #FFFFFF;
+		border: 0px;
+		text-align: center;
+	}
+		div#donation-credits div.button-wrapper input:hover {
+			background-position: 0px 20px;
+			color: #FFFFFF;
+		}
+	div#donation-credits div.button-wrapper a {
+		height: 40px;
+		line-height: 40px;
+		width: 260px;
+		background-image: url('../img/button-blue-very-big.png');
+		font-size: 15px;
+		font-weight: normal;
+		cursor: pointer;
+		display: inline-block;
+		margin: 0px 50px 0px 0px;
+		border-radius: 4px;
+		letter-spacing: 1px;
+		background-position: 0px 0px;
+		color: #FFFFFF;
+		border: 0px;
+		text-align: center;
+	}
+		div#donation-credits div.button-wrapper a:hover {
+			background-position: 0px 20px;
+			color: #FFFFFF;
+		}
+		
+	div#donation-credits div.button-wrapper #amount {
+		-webkit-appearance: none;
+		width: 80%;
+		height: 40px;
+		background: transparent;
+	}
+		div#donation-credits div.button-wrapper #amount::-webkit-slider-thumb {
+			-webkit-appearance: none;
+		}
+		div#donation-credits div.button-wrapper #amount:focus {
+			outline: none;
+		}
+		div#donation-credits div.button-wrapper #amount::-ms-track {
+			width: 100%;
+			cursor: pointer;
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+		}
+			div#donation-credits div.button-wrapper #amount::-webkit-slider-runnable-track {
+				width: 100%;
+				height: 8.4px;
+				cursor: pointer;
+				background: #0F58A7;
+				border-radius: 1.3px;
+				border: 0.2px solid #010101;
+			}
+				div#donation-credits div.button-wrapper #amount:focus::-webkit-slider-runnable-track {
+					background: #0F58A7;
+				}
+				div#donation-credits div.button-wrapper #amount::-webkit-slider-thumb {
+					-webkit-appearance: none;
+					border: 1px solid #0F58A7;
+					height: 36px;
+					width: 16px;
+					border-radius: 3px;
+					background: #FFFFFF;
+					cursor: pointer;
+					margin-top: -14px;
+				}
+			div#donation-credits div.button-wrapper #amount::-moz-range-track {
+				width: 100%;
+				height: 8.4px;
+				cursor: pointer;
+				background: #0F58A7;
+				border-radius: 1.3px;
+				border: 0.2px solid #010101;
+			}
+				div#donation-credits div.button-wrapper #amount::-moz-range-thumb {
+					border: 1px solid #0F58A7;
+					height: 36px;
+					width: 16px;
+					border-radius: 3px;
+					background: #ffffff;
+					cursor: pointer;
+				}
+			div#donation-credits div.button-wrapper #amount::-ms-track {
+				width: 100%;
+				height: 8.4px;
+				cursor: pointer;
+				background: transparent;
+				border-color: transparent;
+				border-width: 16px 0;
+				color: transparent;
+			}
+				div#donation-credits div.button-wrapper #amount::-ms-fill-lower {
+					background: #0F58A7;
+					border: 0.2px solid #010101;
+					border-radius: 2.6px;
+				}
+				div#donation-credits div.button-wrapper #amount:focus::-ms-fill-lower {
+					background: #0F58A7;
+				}
+				div#donation-credits div.button-wrapper #amount::-ms-fill-upper {
+					background: #0F58A7;
+					border: 0.2px solid #010101;
+					border-radius: 2.6px;
+				}
+				div#donation-credits div.button-wrapper #amount:focus::-ms-fill-upper {
+					background: #0F58A7;
+				}
+				div#donation-credits div.button-wrapper #amount::-ms-thumb {
+					border: 1px solid #0F58A7;
+					height: 36px;
+					width: 16px;
+					border-radius: 3px;
+					background: #ffffff;
+					cursor: pointer;
+				}
+
+div#donation-credits div.summary {
+	width: 830px;
+	margin: 0px auto 0px auto;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+}
+
+div#donation-credits-table {
+	margin: 2px 0px 0px 0px;	
+}
+	div#donation-credits-table td {
+		width: 459px;
+	}
+		div#donation-credits-table td.name a {
+			text-align: center;
+			background-image: none;
+			padding: 0px;
+		}
+
+
+/* - Background Viewer ------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */	
+div#backgroundviewer-area {
+	margin: 20px 0px 0px 0px;
+	width: 100%;
+}
+	div#backgroundviewer-area div.content-box-topbar-large {
+		margin: 0px auto 0px auto;
+		width: 1000px;
+	}
+	div#backgroundviewer-area div.content-box-normal {
+		margin: 2px auto 2px auto;
+		text-align: center;
+		font-size: 14px;
+		width: 1000px;
+		height: 50px;
+		line-height: 50px;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .3);
+	}
+	div#backgroundviewer-area div.space {
+		height: 20px;
+		width: 1000px;
+		margin: 0px auto 0px auto;
+	}
+	div#backgroundviewer-area div#profile {
+		pointer-events: none;
+		width: 100%;
+		float: left;
+		border-top: 20px solid #060707;
+		border-top: 20px solid rgba(0, 0, 0, .8);
+		border-bottom: 20px solid #060707;
+		border-bottom: 20px solid rgba(0, 0, 0, .8);
+		margin: 0px 0px 12px 0px;
+	}
+
+div#backgroundviewer-area div.switcher {
+	margin: 2px auto 2px auto;
+	width: 1000px;
+	position: relative;
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+	overflow: auto;
+}
+	div#backgroundviewer-area div.switcher::-webkit-scrollbar {
+		width: 16px;
+		background-color: transparent;
+		border-top: 2px solid #232428;
+	}
+	div#backgroundviewer-area div.switcher::-webkit-scrollbar-track {
+		border-left: 1px solid transparent;
+		background-color: transparent;
+	}
+	div#backgroundviewer-area div.switcher::-webkit-scrollbar-thumb {
+		background-color: #060707;
+		background-image: url('../img/scrollbar.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		border-top: 2px solid #232428;
+	}
+	div#backgroundviewer-area div.switcher div.container {
+		padding: 0px 4px 0px 4px;
+		display: table;
+		border-spacing: 10px;
+	}
+		div#backgroundviewer-area div.switcher div.container div.center {
+			text-align: center;
+			width: 970px;
+			line-height: 80px;
+		}
+		div#backgroundviewer-area div.switcher .background-element {
+			display: table-cell;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			cursor: pointer;
+			position: relative;
+			width: 180px;
+		}
+			div#backgroundviewer-area div.switcher .background-element.active {
+				box-shadow:
+					2px 2px 4px rgba(15, 88, 187, .3),
+					-2px -2px 4px rgba(15, 88, 187, .3),
+					-2px 2px 4px rgba(15, 88, 187, .3),
+					2px -2px 4px rgba(15, 88, 187, .3);
+			}
+			div#backgroundviewer-area div.switcher .background-element:hover {
+				background-color: #060707;
+				background-color: rgba(0, 0, 0, .8);
+			}
+			div#backgroundviewer-area div.switcher .background-element img {
+				display: block;
+				margin: 10px 10px 10px 10px;
+				width: 160px;
+				height: 100px;
+			}
+			div#backgroundviewer-area div.switcher .background-element span.name {
+				display: block;
+				margin: 0px 0px 26px 0px;
+				padding: 0px 10px 0px 10px;
+				text-align: center;
+				white-space: normal;
+				word-wrap: break-word;
+				width: 160px;
+			}
+			div#backgroundviewer-area div.switcher .background-element span.rarity {
+				display: block;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				width: 160px;
+				font-size: 11px;
+				text-align: center;
+			}
+
+
+
+/* - Profile ----------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#profile .content-box-topbar-large .right {
+	font-size: 14px;
+}
+	
+div#profile-recent-trades {
+	width: 1000px;
+	position: relative;
+	margin: 2px 0px 0px 0px;
+}
+	div#profile-recent-trades div.header {
+		line-height: 36px;
+		height: 36px;
+		background-image: url('../img/content-box-point.png');
+		background-repeat: no-repeat;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+		position: relative;
+		margin: 0px 0px 2px 0px;
+	}
+		div#profile-recent-trades div.header span.left {
+			position: absolute;
+			left: 25px;
+			font-family: League Gothic, Arial;
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+		div#profile-recent-trades div.header span.right {
+			position: absolute;
+			right: 15px;
+			font-size: 11px;
+		}
+	div#profile-recent-trades .trade-element {
+		display: block;
+		width: 100%;
+		height: 30px;
+		padding: 0px 0px 2px 0px;
+	}
+		div#profile-recent-trades .trade-element span {
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			height: 30px;
+			line-height: 30px;
+			padding: 0px 10px 0px 10px;
+			text-align: center;
+			display: block;
+			float: left;
+			width: 128px;
+			margin: 0px 0px 0px 2px;
+			position: relative;
+		}
+		div#profile-recent-trades a.trade-element:nth-child(odd) span {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+			div#profile-recent-trades .trade-element span.id {
+				width: 80px;
+				margin: 0px;
+			}
+				div#profile-recent-trades a.trade-element span.status div.hover-reason {
+					padding: 5px 10px 5px 10px;
+					border-radius: 5px;
+					position: absolute;
+					line-height: 13px;
+					height: 13px;
+					top: 2px;
+					right: 162px;
+					background-color: #000000;
+					border: 1px solid #FFFFFF;
+					white-space: nowrap;
+					opacity: 0;
+					transition: opacity .2s;
+					-webkit-transition: opacity .2s;
+					-moz-transition: opacity .2s;
+					-ms-transition: opacity .2s;
+					-o-transition: opacity .2s;
+					color: #FFFFFF;
+					pointer-events: none;
+				}
+					div#profile-recent-trades a.trade-element span.status div.hover-reason:before {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						right: -10px;
+						top: 1px;
+						border: 5px solid;
+						border-color: #FFFFFF transparent transparent #FFFFFF;
+						-moz-transform: rotate(270deg);
+						-ms-transform: rotate(270deg);
+						-o-transform: rotate(270deg);
+						-webkit-transform: rotate(270deg);
+						transform: rotate(270deg);
+						filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+					}
+					div#profile-recent-trades a.trade-element span.status div.hover-reason:after {  
+						content: ' ';
+						position: absolute;
+						width: 0px;
+						height: 0px;
+						right: -10px;
+						top: 11px;
+						border: 5px solid;
+						border-color: #FFFFFF transparent transparent #FFFFFF;
+					}
+					div#profile-recent-trades a.trade-element:hover span.status div.hover-reason {
+						opacity: 1;
+						transition: opacity .2s;
+						-webkit-transition: opacity .2s;
+						-moz-transition: opacity .2s;
+						-ms-transition: opacity .2s;
+						-o-transition: opacity .2s;
+					}
+			div#profile-recent-trades .trade-element span.status.declined {
+				color: #B52426;
+			}
+				div#profile-recent-trades a.trade-element span.status.declined div.hover-reason {
+					border: 1px solid #B52426;
+				}
+					div#profile-recent-trades a.trade-element span.status.declined div.hover-reason:before {
+						border-color: #B52426 transparent transparent #B52426;
+					}
+					div#profile-recent-trades a.trade-element span.status.declined div.hover-reason:after {
+						border-color: #B52426 transparent transparent #B52426;
+					}
+			div#profile-recent-trades .trade-element span.status.accepted {
+				color: #1DAF07;
+			}
+				div#profile-recent-trades a.trade-element span.status.accepted div.hover-reason {
+					border: 1px solid #1DAF07;
+				}
+					div#profile-recent-trades a.trade-element span.status.accepted div.hover-reason:before {
+						border-color: #1DAF07 transparent transparent #1DAF07;
+					}
+					div#profile-recent-trades a.trade-element span.status.accepted div.hover-reason:after {
+						border-color: #1DAF07 transparent transparent #1DAF07;
+					}
+			div#profile-recent-trades .trade-element span.status.escrow {
+				color: #FF8C00;
+			}
+				div#profile-recent-trades a.trade-element span.status.escrow div.hover-reason {
+					border: 1px solid #FF8C00;
+				}
+					div#profile-recent-trades a.trade-element span.status.escrow div.hover-reason:before {
+						border-color: #FF8C00 transparent transparent #FF8C00;
+					}
+					div#profile-recent-trades a.trade-element span.status.escrow div.hover-reason:after {
+						border-color: #FF8C00 transparent transparent #FF8C00;
+					}
+			div#profile-recent-trades div.trade-element span {
+				font-weight: bold;
+				padding: 0px;
+				width: 148px;
+			}
+				div#profile-recent-trades div.trade-element span.id {
+					width: 100px;
+				}
+				div#profile-recent-trades div.trade-element span a {
+					display: block;
+					height: 30px;
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .8);
+				}
+				div#profile-recent-trades div.trade-element span a:hover {
+					background-color: #060707;
+					background-color: rgba(0, 0, 0, .8);
+				}
+			div#profile-recent-trades a.trade-element:hover span {
+				background-color: #060707;
+				background-color: rgba(0, 0, 0, .8);
+			}
+
+/* - News List --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.news-list {
+	font-size: 14px;
+}
+	div.news-list span.news-time {
+		color: #7d7d7d;
+		font-size: 10px;
+		position: absolute;
+		right: 15px;
+	}
+	div.news-list span.news-author {
+		color: #7d7d7d;
+		font-size: 10px;
+		margin: 0px 0px 0px 5px;
+	}
+	div.news-list a.button-blue {
+		bottom: 2px !important;
+	}
+
+
+/* - News View --------------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#news-view .content-box-normal a {
+	text-decoration: underline;
+}
+	div#news-view .content-box-normal a:hover {
+		text-decoration: none;
+	}
+div#news-view .content-box-normal li {
+	display: inline-block;
+	padding: 0px 0px 0px 20px;
+	background-image: url('../img/point-small.png');
+	background-position: 8px 4px;
+	background-repeat: no-repeat;
+	line-height: 15px;
+}
+div#news-view .content-box-normal h1 {
+	margin: 0px;
+	padding: 0xp;
+}
+
+div#news-view .content-box-normal .news-author {
+	text-align: right;
+}
+
+
+/* - Frequently Asked Questions ---------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.question {
+	margin: 2px 0px 0px 0px;
+}
+
+
+/* - Badge Price List -------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.badge-price-list .center a.button-blue {
+	padding: 0px;
+	width: 60px;
+}
+
+/* - Missing Content --------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div.showcase-game-page.missing {
+	width: 1000px;
+	height: 42px;
+	position: relative;
+	float: left;
+	margin: 20px 0px 0px 0px;
+}
+div.content-box-normal table.missing-stats {
+	font-size: 11px;
+	color: #AAAAAA;
+	width: 100%;
+	line-height: 30px;
+}
+	div.content-box-normal table.missing-stats th {
+		width: 35px;
+		color: #FFFFFF;
+		margin: 0px 5px 0px 0px;
+	}
+		div.content-box-normal table.missing-stats th.first {
+			padding: 0px 0px 0px 20px;
+		}
+		div.content-box-normal table.missing-stats th.title {
+			padding: 0px 20px 0px 0px;
+			color: #FFFFFF;
+			text-align: left;
+			border-right: 2px solid #232428;
+		}
+	div.content-box-normal table.missing-stats td {
+		width: 110px;
+	}
+
+/* - Background Battle ------------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+div#background-battle div.container-left {
+	width: 496px;
+	float: left;
+}
+div#background-battle div.container-right {
+	width: 496px;
+	float: right;
+}
+
+div#background-battle div.game-title {
+	width: 424px;
+	height: 40px;
+	line-height: 40px;
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px 40px 0px 32px;
+	background-color: #060707;
+	background-color: rgba(0, 0, 0, .8);
+	background-image: url(../img/point-small.png);
+	background-position: 16px 17px;
+	background-repeat: no-repeat;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+	margin-top: 2px;
+}
+div#background-battle div.game-image {
+	margin-top: 2px;
+	float: left;
+	width: 292px;
+	height: 136px;
+}
+	div#background-battle div.game-image img {
+		width: 292px;
+		height: 136px;
+	}
+
+div#background-battle div.game-info {
+	margin: 2px 0px 2px 0px;
+	float: right;
+	width: 182px;
+	height: 116px;
+	font-family: Arial;
+	padding: 10px;
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+	font-size: 12px;
+	color: #AAAAAA;
+	position: relative;
+}
+	div#background-battle div.game-info table {
+		width: 162px;
+		line-height: 25px;
+		font-size: 12px;
+		margin: 7px 10px 0px 10px;
+	}
+		div#background-battle div.game-info table th {
+			font-weight: normal;
+			width: 110px;
+			text-align: left;
+			color: #AAAAAA;
+		}
+		div#background-battle div.game-info table td {
+			width: 52px;
+			text-align: right;
+		}
+	div#background-battle div.game-info a.store-button {
+		position: absolute;
+		bottom: 9px;
+		right: 10px;
+		margin-left: 6px;
+	}
+	div#background-battle div.game-info a.showcase-button {
+		position: absolute;
+		bottom: 9px;
+		left: 10px;
+		margin-left: 0px;
+	}
+	
+	
+div#background-battle div.background-name {
+	background-color: #111214;
+	background-color: rgba(0, 0, 0, .5);
+	line-height: 36px;
+	height: 36px;
+	background-image: url('../img/point-small.png');
+	background-position: 11px 14px;
+	background-repeat: no-repeat;
+	clear: both;
+	position: relative;
+	width: 496px;
+}
+	div#background-battle div.background-name span.name {
+		left: 25px;
+		font-size: 14px;
+		font-weight: bold;
+		white-space: nowrap;
+		overflow: hidden !important;
+		text-overflow: ellipsis;
+		margin: 0px 90px 0px 25px;
+		max-width: 381px !important;
+		display: block;
+	}
+	div#background-battle div.background-name span.rarity {
+		z-index: 10;
+		position: absolute !important;
+		top: 0px;
+		right: 10px;
+		width: 90px;
+		text-align: right;
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+div#background-battle div.background-image {
+	position: relative;
+	padding: 20px;
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+	height: 308px
+}
+	
+	div#background-battle img.voting-tick {
+		z-index: 10;
+		display: none;
+		position: absolute;
+		width: 254px;
+		height: 254px;
+		margin-top: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+		margin-left: auto;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+	}
+	div#background-battle img.cursor-pointer {
+		cursor: pointer;
+	}
+	
+div#background-battle div.background-info {
+	position: relative;
+	margin-top: 2px;
+	width: 496px;
+	height: 40px;
+	background-color: #18191B;
+	background-color: rgba(0, 0, 0, .3);
+}
+	div#background-battle div.background-info table {
+		line-height: 34px;
+		font-size: 12px;
+		border-spacing: 3px;
+		border-collapse: separate;
+		margin: 0px 0px 0px 17px;
+	}
+		div#background-battle div.background-info table th {
+			font-weight: normal;
+			text-align: left;
+			color: #AAAAAA;
+		}
+		div#background-battle div.background-info table td {
+			text-align: right;
+			padding: 0px 7px 0px 0px;
+		}
+	div#background-battle div.background-info a {
+		position: absolute;
+		right: 20px;
+		top: 9px;
+	}
+
+/* - Background Pricelist ---------------------------------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------------------------------------------------------- */
+table#toplist_backgrounds.price-list-table tr td {
+	vertical-align: middle;
+}
+table#toplist_backgrounds.price-list-table tr td.bgname {
+	text-align: left;
+	padding: 0px 0px 0px 0px;
+	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0);
+}
+	table#toplist_backgrounds.price-list-table.nth tr.odd td.bgname {
+		background-color: transparent;
+		background-color: rgba(0, 0, 0, 0);
+	}
+		table#toplist_backgrounds.price-list-table tr td.bgname a {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			line-height: 15px;
+			text-align: center;
+			height: 100%;
+			width: 100%;
+			padding: 8px 10px 8px 10px;
+			background-color: #18191B;
+			background-color: rgba(0, 0, 0, .3);
+			box-sizing: border-box;
+		}
+			table#toplist_backgrounds.price-list-table.nth tr.odd td.bgname a {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .5);
+			}
+			table#toplist_backgrounds.price-list-table tr td.bgname a:hover {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .8);
+				color: #FFFFFF;
+			}
+			table#toplist_backgrounds.price-list-table.nth tr.odd td.bgname a:hover {
+				background-color: #111214;
+				background-color: rgba(0, 0, 0, .8);
+				color: #FFFFFF;
+			}
+	table#toplist_backgrounds.price-list-table.nth tr td.bgimg {
+		line-height: 0px;
+	}
+
+/* = General Classes ================================================================================================================================= */
+/* =================================================================================================================================================== */
+
+/* --------- Price List Table ------------- */
+table.price-list-table {
+	position: relative;
+	right: 2px;
+	width: 1004px;
+	border-spacing: 2px;
+	border-collapse: separate;
+}
+	table.price-list-table tr.hidden {
+		display: none;
+	}
+	table.price-list-table a:hover {
+		color: #FFFFFF;
+	}
+	table.price-list-table tr th {
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background-color: #060707;
+		background-color: rgba(0, 0, 0, .8);
+		padding: 0px 15px 0px 5px;
+	}
+		table.price-list-table tr th a {
+			display: block;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background-color: #060707;
+			background-color: rgba(0, 0, 0, .8);
+		}
+			table.price-list-table tr th a:hover {
+				background-color: #000000;
+				background-color: rgba(0, 0, 0, 1);
+			}
+	table.price-list-table tr:nth-child(odd) {
+		background-color: rgba(0, 0, 0, .3);
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding: 0px 20px 0px 20px;
+	}
+	table.price-list-table.nth tr:nth-child(odd) {
+		background-color: transparent;
+	}
+	table.price-list-table tr td {
+		background-color: #18191B;
+		background-color: rgba(0, 0, 0, .3);
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding: 0px 20px 0px 20px;
+	}
+		table.price-list-table tr td.ellipsis {
+			white-space: nowrap;
+			overflow: hidden !important;
+			text-overflow: ellipsis;
+		}
+			table.price-list-table tr td.ellipsis.disabled {
+				text-overflow: "... (Disabled)";
+			}
+			table.price-list-table tr td.ellipsis.market {
+				text-overflow: "... (Non-Marketable)";
+			}
+		table.price-list-table.nth tr.odd td {
+			background-color: #111214;
+			background-color: rgba(0, 0, 0, .5);
+		}
+		table.price-list-table tr td.name {
+			text-align: left;
+			padding: 0px 0px 0px 0px;
+			background-color: transparent;
+			background-color: rgba(0, 0, 0, 0);
+		}
+			table.price-list-table.nth tr.odd td.name {
+				background-color: transparent;
+				background-color: rgba(0, 0, 0, 0);
+			}
+			table.price-list-table tr td.name a {
+				display: block;
+				height: 30px;
+				line-height: 30px;
+				padding: 0px 0px 0px 32px;
+				background-color: #18191B;
+				background-color: rgba(0, 0, 0, .3);
+				background-image: url('../img/point-small.png');
+				background-position: 16px 12px;
+				background-repeat: no-repeat;
+			}
+				table.price-list-table.nth tr.odd td.name a {
+					background-color: #111214;
+					background-color: rgba(0, 0, 0, .5);
+				}
+				table.price-list-table tr td.name a:hover {
+					background-color: #111214;
+					background-color: rgba(0, 0, 0, .8);
+					color: #FFFFFF;
+				}
+				table.price-list-table.nth tr.odd td.name a:hover {
+					background-color: #111214;
+					background-color: rgba(0, 0, 0, .8);
+					color: #FFFFFF;
+				}
+		table.price-list-table tr td.red a {
+			background-image: url('../img/point-small-red.png');
+		}
+		table.price-list-table tr td.green a {
+			background-image: url('../img/point-small-green.png');
+		}
+		table.price-list-table tr td a.red {
+			background-image: url('../img/point-small-red.png');
+		}
+		table.price-list-table tr td a.green {
+			background-image: url('../img/point-small-green.png');
+		}
+		table.price-list-table tr td a.grey {
+			background-image: url('../img/point-small-grey.png');
+		}
+		
+		table.price-list-table tr td.red-text {
+			color: #B52426;
+		}
+		table.price-list-table tr td.green-text {
+			color: #1DAF07;
+		}
+		
+		table.price-list-table tr td .red-text {
+			color: #B52426;
+		}
+		table.price-list-table tr td .green-text {
+			color: #1DAF07;
+		}
+		table.price-list-table tr.common td a {
+			background-image: url('../img/point-small-common.png');
+		}
+		table.price-list-table tr.uncommon td a {
+			background-image: url('../img/point-small-uncommon.png');
+		}
+		table.price-list-table tr.rare td a {
+			background-image: url('../img/point-small-rare.png');
+		}
+		table.price-list-table tr.extraordinary td a {
+			background-image: url('../img/point-small-extraordinary.png');
+		}
+		table.price-list-table tr.precious td a {
+			background-image: url('../img/point-small-precious.png');
+		}
+		table.price-list-table tr.unparalleled td a {
+			background-image: url('../img/point-small-unparalleled.png');
+		}
+
+
+/* --------- Missing Content ------------- */
+table#missingcontent.price-list-table tr:nth-child(odd) {
+	height: initial !important;
+	line-height: initial !important;
+}
+table#missingcontent.price-list-table tr td {
+	height: initial !important;
+	line-height: initial !important;
+	padding: 10px !important;
+}
+table#missingcontent.price-list-table tr td.name {
+	padding: 0px !important;
+	height: 100% !important;
+	background-color: #18191B;
+}
+	table#missingcontent.price-list-table tr.odd td.name {
+		background-color: #111214;
+	}
+	table#missingcontent.price-list-table tr td.name:hover {
+		background-color: #000000;
+	}
+	table#missingcontent.price-list-table tr td.name a {
+		background-color: transparent !important;
+		line-height: initial !important;
+		background-image: none;
+		padding: 10px 10px 10px 0px !important;
+		margin: 0px 0px 0px 10px !important;
+	}
+		table#missingcontent.price-list-table tr td.name a:hover {
+			background-color: transparent !important;
+		}
+	table#missingcontent.price-list-table tr.common td a {
+		background-image: none;
+	}
+	table#missingcontent.price-list-table tr.uncommon td a {
+		background-image: none;
+	}
+	table#missingcontent.price-list-table tr.rare td a {
+		background-image: none;
+	}
+	table#missingcontent.price-list-table tr.extraordinary td a {
+		background-image: none;
+	}
+	table#missingcontent.price-list-table tr.precious td a {
+		background-image: none;
+	}
+	table#missingcontent.price-list-table tr.unparalleled td a {
+		background-image: none;
+	}
+
+
+
+/* --------- Message Result ------------- */
+div.message-result {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	right: 0;
+	width: 500px;
+	color: #FFFFFF;
+	height: 15px;
+	font-size: 15px;
+	text-align: center;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-radius: 5px;
+	background-color: #000000;
+	background-color: rgba(0, 0, 0, .8);
+}
+	div.message-result.success {
+		background-color: #1B9606;
+		background-color: rgba(27, 150, 6, .8);
+	}
+	div.message-result.failure {
+		background-color: #961E20;
+		background-color: rgba(150, 30, 32, .8);
+	}
+	
+/* --------- Blue Button ------------- */
+.button-blue {
+	height: 20px;
+	line-height: 20px;
+	background-image: url('../img/button-blue.png');
+	font-size: 9px;
+	font-weight: bold;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 8px 0px 8px;
+	margin: 0px 0px 0px 10px;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	float: right;
+	border: 0px;
+	color: #FFFFFF;
+	background-position: left 0px top 0px;
+	font-family: Arial;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	.button-blue.left {
+		float: left;
+		margin: 0px 0px 0px 0px;
+	}
+	.button-blue:hover {
+		background-position: left 0px top -20px;
+		color: #FFFFFF;
+	}
+	.button-blue.active {
+		background-position: left 0px top -20px;
+		color: #FFFFFF;
+	}
+	.button-blue.disabled {
+		background-position: left 0px top -40px;
+		color: #FFFFFF;
+		cursor: default;
+	}
+	
+/* --------- Green Button ------------- */
+.button-green {
+	height: 32px;
+	line-height: 32px;
+	background-image: url('../img/button-group.png');
+	font-size: 14px;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 20px 0px 20px;
+	margin: 0px 0px 0px 10px;
+	border-radius: 4px;
+	letter-spacing: 1px;
+	float: right;
+	background-position: 0px 0px;
+}
+	.button-green:hover {
+		background-position: 0px 32px;
+		color: #FFFFFF;
+	}
+	.button-green.active {
+		background-position: 0px 32px;
+		color: #FFFFFF;
+	}
+
+/* --------- General ------------- */
+.text-space {
+	letter-spacing: 2px;
+}
+
+.formal_center {
+	text-align: center;
+}
+
+.minimal {
+	line-height: 260px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.margin-normal {
+	margin: 8px 0px 0px 0px !important;	
+}
+
+/* --------- Grade Colors ------------- */
+.common {
+	color: #B2B2B2 !important;
+}
+.uncommon {
+	color: #70B04A !important;
+}
+.rare {
+	color: #9E2020 !important;
+}
+.extraordinary {
+	color: #8650AC !important;
+}
+.precious {
+	color: #505FAC !important;
+}
+.unparalleled {
+	color: #E46100 !important;
+}
+
+/* --------- Grade Colors Hack ------------- */
+.common a {
+	color: #B2B2B2 !important;
+}
+.uncommon a {
+	color: #70B04A !important;
+}
+.rare a {
+	color: #9E2020 !important;
+}
+.extraordinary a {
+	color: #8650AC !important;
+}
+.precious a {
+	color: #505FAC !important;
+}
+.unparalleled a {
+	color: #E46100 !important;
+}
+
+/* --------- Search Engine Headline Fix ------------- */
+h1.empty {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+h2.empty {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+h3.empty {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+h4.empty {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+h5.empty {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	font-family: inherit;
+}
+
+/* --------- Switch Checkbox ------------- */
+.switch-wrapper {
+	background-color: #000000;
+	margin: 0px 0px 0px 5px;
+	display: inline-block;
+	height: 20px;
+	padding: 5px 5px 5px 5px;
+}
+	.switch-wrapper .text {
+		height: 20px;
+		line-height: 20px;
+		display: inline-block;
+		position: relative;
+		bottom: 5px;
+		padding: 0px 10px 0px 5px;
+	}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	.switch .slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #999;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+		.switch .slider:before {
+			position: absolute;
+			content: "";
+			height: 12px;
+			width: 16px;
+			left: 4px;
+			bottom: 4px;
+			background-color: #FFFFFF;
+			-webkit-transition: .4s;
+			transition: .4s;
+		}
+	.switch input {
+		display: none;
+		height: 0px;
+	}
+		.switch input:checked + .slider {
+			background-color: #256EBD;
+		}
+		.switch input:focus + .slider {
+			box-shadow: 0 0 1px #256EBD;
+		}
+		.switch input:checked + .slider:before {
+			-webkit-transform: translateX(16px);
+			-ms-transform: translateX(16px);
+			transform: translateX(16px);
+		}
+	.switch.green input:checked + .slider {
+		background-color: #159205;
+	}
+	.switch.red input:checked + .slider {
+		background-color: #771718;
+	}
+	.switch.blue input:checked + .slider {
+		background-color: #0F58A7;
+	}
+	.switch.grey input:checked + .slider {
+		background-color: #333333;
+	}
+	.switch.common input:checked + .slider {
+		background-color: #B2B2B2;
+	}
+	.switch.uncommon input:checked + .slider {
+		background-color: #70B04A;
+	}
+	.switch.rare input:checked + .slider {
+		background-color: #9E2020;
+	}
+	.switch.extraordinary input:checked + .slider {
+		background-color: #8650AC;
+	}
+	.switch.precious input:checked + .slider {
+		background-color: #505FAC;
+	}
+	.switch.unparalleled input:checked + .slider {
+		background-color: #E46100;
+	}
+
+
+/* --------- Badge Collector Page Hack ------------- */
+.badge-collector h2 {
+	width: 700px;
+}
+
+/* --------- DataTables ------------- */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+	table.dataTable thead .sorting {
+		background-image: url("../img/datatables/sort_both.png");
+	}
+	table.dataTable thead .sorting_asc {
+		background-image: url("../img/datatables/sort_asc.png");
+	}
+	table.dataTable thead .sorting_desc {
+		background-image: url("../img/datatables/sort_desc.png");
+	}
+	table.dataTable thead .sorting_asc_disabled {
+		background-image: url("../img/datatables/sort_asc_disabled.png");
+	}
+	table.dataTable thead .sorting_desc_disabled {
+		background-image: url("../img/datatables/sort_desc_disabled.png");
+	}
+.dataTables_wrapper .dataTables_footer {
+	display: block;
+	height: 40px;
+	background-color: #18191B;
+	position: relative;
+}
+.dataTables_wrapper .dataTables_info {
+	padding: 6px 10px 6px 10px;
+	line-height: 28px;
+	display: inline-block;
+	height: 28px;
+	position: absolute;
+	top: 0px;
+	left: 0px
+}
+.dataTables_wrapper .dataTables_paginate {
+	padding: 6px 10px 6px 10px;
+	display: inline-block;
+	height: 28px;
+	position: absolute;
+	top: 0px;
+	right: 0px
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	box-sizing: border-box;
+	display: inline-block;
+	min-width: 1.5em;
+	padding: 0.5em 1em;
+	margin-left: 2px;
+	text-align: center;
+	text-decoration: none !important;
+	cursor: pointer;
+	*cursor: hand;
+	color: #FFFFFF !important;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-family: Arial;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+	.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+		background-image: url('../img/datatables/button_paginate.png');
+		background-position: left 0px top -30px;
+		color: #FFFFFF !important;
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+		background-image: url('../img/datatables/button_paginate.png');
+		background-position: left 0px top 0px;
+		color: #FFFFFF;
+	}
+		.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+			cursor: default;
+			outline: 0px;
+		}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+		background-image: none;
+		cursor: default;
+		outline: 0px;
+	}
+.dataTables_wrapper .content-box-normal {
+	display: block;
+	height: 40px;
+	padding: 0px !important;
+}
+	.dataTables_wrapper .dataTables_length {
+		padding: 3px 20px 3px 20px;
+		line-height: 34px;
+		height: 34px;
+		position: absolute;
+		top: 0px;
+		left: 0px
+	}
+		.dataTables_wrapper .dataTables_length select {
+			border: 1px solid #9E9E9E;
+			background-color: #18191B;
+			color: #9E9E9E;
+			outline: 0;
+		}
+			.dataTables_wrapper .dataTables_length option {
+				outline: 0;
+			}
+	.dataTables_wrapper .dataTables_filter {
+		padding: 3px 20px 3px 20px;
+		line-height: 34px;
+		height: 34px;
+		position: absolute;
+		top: 0px;
+		right: 0px
+	}
+		.dataTables_wrapper .dataTables_filter label {
+			position: relative;
+			margin: 0;
+			margin: 2px 0px 2px 0px;
+			width: 250px;
+			white-space: nowrap;
+			border: 1px solid #9E9E9E;
+			height: 28px;
+			display: inline-block;
+		}
+		.dataTables_wrapper .dataTables_filter input {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			width: 100%;
+			display: block;
+			height: 22px;
+			line-height: 22px;
+			margin: 3px 10px 3px 2px;
+			padding: 4px 20px 4px 5px;
+			outline: 0;
+			border: 0px;
+			background-image: url('../img/datatables/sort_search.png');
+			background-position: 230px center;
+			background-repeat: no-repeat;
+			background-color: transparent;
+			font-size: 1em;
+			font-family: sans-serif;
+			line-height: normal;
+			border-radius: 0;
+			color: #9E9E9E;
+		}
