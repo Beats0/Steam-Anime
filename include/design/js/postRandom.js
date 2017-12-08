@@ -1,0 +1,17 @@
+$(document).ready(function () {
+    var post_thumbnail_link = new Array();
+    post_thumbnail_link[0] = "853856987591209532/598CC1EC74F56DC2D2E18D3197D3B36C4DC11DA2/";
+    post_thumbnail_link[1] = "853856987591209532/598CC1EC74F56DC2D2E18D3197D3B36C4DC11DA2/";
+    post_thumbnail_link[2] = "853856987591210086/C94718DB3CDE5F6BFF84C464068EB58C206887CD/";
+    post_thumbnail_link[3] = "853856987591210341/5B920A47B316236206D49A211F0F5842C4DAF8E2/";
+    post_thumbnail_link[4] = "853856987591210480/7EFB45326F7960B99A9C428B0D07B063BCF121E7/";
+    post_thumbnail_link[5] = "853856987591210619/D69199DADA16A631388E361DE9FD53EB4ECACA9C/";
+    post_thumbnail_link[6] = "853856987591210763/608F5C237A1B393A6686E696A5208FFC2332F2D3/";
+    post_thumbnail_link[7] = "853856987591210945/DA4CEC4606074AAFFEA043E0DB21EFEBD638D1E5/";
+    post_thumbnail_link[8] = "853856987591211102/D1F3E5E34EB44B9F894DD5C8A09A7BC351E75B5D/";
+    post_thumbnail_link[9] = "853856987591211256/D83DAFA26E04F62434362D04560B66674CEB5D08/";
+    post_thumbnail_link[10] = "853856987591211449/E5FD8B3883621035D5D314827265E447C8F3CC0A/";
+
+    i = Math.floor(Math.random() * (Math.floor(post_thumbnail_link.length)));
+    $(".home-artwork_img").attr("src",'https://steamuserimages-a.akamaihd.net/ugc/' + post_thumbnail_link[i]);
+}())
