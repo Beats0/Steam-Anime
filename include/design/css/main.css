@@ -484,9 +484,10 @@ div.content-box {
 		background-image: url(../img/point-small.png);
 		background-position: 11px 14px;
 		background-repeat: no-repeat;
-		background-color: #060707;
-		background-color: rgba(0, 0, 0, .5);
 		position: relative;
+		background-color: hsla(0,0%,100%,.4);
+		-webkit-box-shadow: rgba(0,0,0,.1) 0 1px 2px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.1);
 	}
 		div.content-box div.content-box-topbar.light {
 			background-color: #111214;
@@ -824,7 +825,6 @@ div#partner {
 /* - Home -------------------------------------------------------------------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------------------------------------------------------------------------------------- */
 body#home {
-	background-image: url('../backgrounds/batman.jpg');
 	background-position: top center;
 	background-color: #242328;
 }
@@ -851,10 +851,11 @@ div#home-games {
 		div#home-games div.switcher div#games-content {
 			width: 926px;
 			height: 110px;
-			background-color: #18191B;
-			background-color: rgba(0, 0, 0, .3);
 			margin: 0px auto 0px auto;
 			padding: 0px 10px 0px 8px;
+			background-color: hsla(0,0%,100%,.4);
+			-webkit-box-shadow: rgba(0,0,0,.1) 0 1px 2px;
+			box-shadow: 0 1px 2px rgba(0,0,0,.1);
 		}
 			div#home-games div.switcher div#games-content div#width-fix {
 				width: 926px;
@@ -869,13 +870,14 @@ div#home-games {
 			div#home-games div.switcher div#games-content a.games-game {
 				width: 146px;
 				height: 68px;
-				background-color: #111214;
-				background-color: rgba(0, 0, 0, .3);
 				margin: 11px 10px 0px 10px;
 				padding: 10px 9px 10px 9px;
 				display: block;
 				float: left;
 				position: relative;
+				background-color: hsla(0,0%,100%,.4);
+				-webkit-box-shadow: rgba(0,0,0,.1) 0 1px 2px;
+				box-shadow: 0 1px 2px rgba(0,0,0,.1);
 			}
 				div#home-games div.switcher div#games-content a.games-game.pinned:before {
 					content: ' ';
@@ -891,8 +893,7 @@ div#home-games {
 					border-radius: 16px;
 				}
 				div#home-games div.switcher div#games-content a.games-game:hover {
-					background-color: #060707;
-					background-color: rgba(0, 0, 0, .6);
+					background-color: rgba(192, 192, 192, 0.6);
 				}
 				div#home-games div.switcher div#games-content a.games-game img {
 					width: 146px;
@@ -1885,6 +1886,7 @@ div.showcase-element-container img.artworks-images {
 			div.showcase-element-container.background div.showcase-element .element-image {
 				margin: 30px auto 8px auto;
 			}
+
 		div.showcase-element-container div.showcase-element span.element-text {
 			display: block;
 			width: 140px;
@@ -3662,7 +3664,6 @@ table.dataTable thead .sorting_desc_disabled {
 	}
 		.dataTables_wrapper .dataTables_filter label {
 			position: relative;
-			margin: 0;
 			margin: 2px 0px 2px 0px;
 			width: 250px;
 			white-space: nowrap;
@@ -3694,4 +3695,10 @@ table.dataTable thead .sorting_desc_disabled {
 			line-height: normal;
 			border-radius: 0;
 			color: #9E9E9E;
+		}
+		div.showcase-element-container div.showcase-element img.badge_icon {
+			width: 80px;
+			height: 80px;
+			display: block;
+			margin: 20px auto 8px auto;
 		}
