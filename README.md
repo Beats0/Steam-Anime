@@ -8,7 +8,7 @@ Game links are from [Steam Anime Backgrounds](http://steamcommunity.com/sharedfi
 
 Here are the game name and game ID : [Steam_Anime_Backgrounds_List](https://beats0.github.io/Steam-Anime/Steam_Anime_Backgrounds_List.html)
 
-~~It is my firs time to write Python code，i had studied python for only 3 days,the Python code style was little different from JavsScript for me,which mean this python code doesn't has effectiveness and practicability = =,improve and perfect this repository if you are interested in this repository (꒪Д꒪)ノ~~
+~~It is my first time writing Python code，i had studied python for only 3 days,the Python code style was little different from JavsScript for me,which mean this python code doesn't has effectiveness and practicability = =,improve and perfect this repository if you are interested in this repository (꒪Д꒪)ノ~~
 
 contact me on steam: http://steamcommunity.com/id/2047155291
 
